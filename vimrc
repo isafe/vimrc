@@ -5,8 +5,11 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'kien/ctrlp.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'bling/vim-airline'
 call vundle#end()
 
+"airline设置
+set laststatus=2
 "开启语法高亮
 syntax on
 "检测文件类型
@@ -29,3 +32,7 @@ set shiftwidth=4
 set softtabstop=4
 "不完全兼容VI
 set nocompatible
+"粘贴缩进快捷键
+set pastetoggle=<F2>
+"每行宽度
+set textwidth=79
